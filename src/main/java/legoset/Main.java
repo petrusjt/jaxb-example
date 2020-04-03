@@ -1,9 +1,7 @@
 package legoset;
 
-import album.Album;
 import jaxb.JAXBHelper;
 
-import javax.xml.bind.JAXBException;
 import java.io.*;
 import java.time.Year;
 import java.util.*;

@@ -18,6 +18,9 @@ public @Data @NoArgsConstructor @AllArgsConstructor
 class LegoSet {
     @XmlAttribute
     private String number;
+    private String name;
+    private String theme;
+    private String subtheme;
     @XmlJavaTypeAdapter(YearAdapter.class)
     private Year year;
     private int pieces;
@@ -27,10 +30,8 @@ class LegoSet {
     @XmlElementWrapper(name = "minifigs")
     @XmlElement(name = "minifig")
     private List<Minifig> minifigs;
-    private String name;
-    private String theme;
-    private String subtheme;
-    private String url;
     private Weight weight;
+    private String url;
+
 
 }

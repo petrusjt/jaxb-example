@@ -25,13 +25,10 @@ public class Main {
         legoSet.setTags(tags);
         List<Minifig> minifigs = new ArrayList<Minifig>();
         minifigs.add(new Minifig(2,"Imperial Mudtrooper"));
-        minifigs.add(new Minifig(2,"Imperial Pilot"));
+        minifigs.add(new Minifig(1,"Imperial Pilot"));
         minifigs.add(new Minifig(1,"Mimban Stormtrooper"));
         legoSet.setMinifigs(minifigs);
 
         JAXBHelper.toXML(legoSet, System.out);
-
-        JAXBHelper.toXML(legoSet, new FileOutputStream("legoset.xml"));
-        System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
     }
 }
